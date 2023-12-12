@@ -1,0 +1,258 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "greet_programmer",
+        "importPath": "functions",
+        "description": "functions",
+        "isExtraImport": true,
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "importPath": "functions",
+        "description": "functions",
+        "isExtraImport": true,
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "greet_with_default",
+        "importPath": "functions",
+        "description": "functions",
+        "isExtraImport": true,
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "\\",
+        "importPath": "functions",
+        "description": "functions",
+        "isExtraImport": true,
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-functions\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-functions\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-functions\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-functions\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-functions\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_itemcollected",
+        "kind": 2,
+        "importPath": "lib.testing.conftest",
+        "description": "lib.testing.conftest",
+        "peekOfCode": "def pytest_itemcollected(item):\n    par = item.parent.obj\n    node = item.obj\n    pref = par.__doc__.strip() if par.__doc__ else par.__class__.__name__\n    suf = node.__doc__.strip() if node.__doc__ else node.__name__\n    if pref or suf:\n        item._nodeid = ' '.join((pref, suf))",
+        "detail": "lib.testing.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "TestGreetProgrammer",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestGreetProgrammer:\n    '''function greet_programmer()'''\n    def test_greet_programmer(self):\n        '''prints \"Hello, programmer!\"'''\n        captured_out = io.StringIO()\n        sys.stdout = captured_out\n        greet_programmer()\n        sys.stdout = sys.__stdout__\n        assert(captured_out.getvalue() == \"Hello, programmer!\\n\")\nclass TestGreet:",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestGreet",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestGreet:\n    '''function greet()'''\n    def test_greet_programmer(self):\n        '''prints \"Hello, {name}!\"'''\n        captured_out = io.StringIO()\n        sys.stdout = captured_out\n        greet(\"Guido\")\n        sys.stdout = sys.__stdout__\n        assert(captured_out.getvalue() == \"Hello, Guido!\\n\")\nclass TestGreetWithDefault:",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestGreetWithDefault",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestGreetWithDefault:\n    '''function greet_with_default()'''\n    def test_greet_with_default(self):\n        '''prints \"Hello, programmer!\"'''\n        captured_out = io.StringIO()\n        sys.stdout = captured_out\n        greet_with_default()\n        sys.stdout = sys.__stdout__\n        assert(captured_out.getvalue() == \"Hello, programmer!\\n\")\n    def test_greet_with_default_with_param(self):",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestAdd",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestAdd:\n    '''function add()'''\n    def test_add(self):\n        '''calculates 45 + 55 = 100'''\n        assert(add(45, 55) == 100)\nclass TestHalve:\n    '''function halve()'''\n    def test_halve_int(self):\n        '''halves integer input'''\n        assert(halve(100) == 50)",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestHalve",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestHalve:\n    '''function halve()'''\n    def test_halve_int(self):\n        '''halves integer input'''\n        assert(halve(100) == 50)\n    def test_halve_float(self):\n        '''halves float input'''\n        assert(halve(99.0) == 49.5)",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "greet_programmer",
+        "kind": 2,
+        "importPath": "lib.functions",
+        "description": "lib.functions",
+        "peekOfCode": "def greet_programmer():\n    print(\"Hello, programmer!\")\ndef greet(name):\n    print(f\"Hello, {name}!\")\ndef greet_with_default(name=\"programmer\"):\n    print(f\"Hello, {name}!\")\ndef add(num1, num2):\n    return num1 + num2\ndef halve(number):\n    return number / 2",
+        "detail": "lib.functions",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "lib.functions",
+        "description": "lib.functions",
+        "peekOfCode": "def greet(name):\n    print(f\"Hello, {name}!\")\ndef greet_with_default(name=\"programmer\"):\n    print(f\"Hello, {name}!\")\ndef add(num1, num2):\n    return num1 + num2\ndef halve(number):\n    return number / 2",
+        "detail": "lib.functions",
+        "documentation": {}
+    },
+    {
+        "label": "greet_with_default",
+        "kind": 2,
+        "importPath": "lib.functions",
+        "description": "lib.functions",
+        "peekOfCode": "def greet_with_default(name=\"programmer\"):\n    print(f\"Hello, {name}!\")\ndef add(num1, num2):\n    return num1 + num2\ndef halve(number):\n    return number / 2",
+        "detail": "lib.functions",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "lib.functions",
+        "description": "lib.functions",
+        "peekOfCode": "def add(num1, num2):\n    return num1 + num2\ndef halve(number):\n    return number / 2",
+        "detail": "lib.functions",
+        "documentation": {}
+    },
+    {
+        "label": "halve",
+        "kind": 2,
+        "importPath": "lib.functions",
+        "description": "lib.functions",
+        "peekOfCode": "def halve(number):\n    return number / 2",
+        "detail": "lib.functions",
+        "documentation": {}
+    }
+]
